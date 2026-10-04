@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="楽天ROOM準備アシストは、楽天市場の商品リサーチとROOM投稿準備を支援する個人用Chrome拡張機能です。">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="楽天ROOM準備アシスト">
+  <meta property="og:description" content="楽天市場の商品リサーチからROOM投稿直前までを支援する個人用Chrome拡張機能">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yujiki0802-jpg.github.io/rakuten-room-assist-app-site/">
+  <title>楽天ROOM準備アシスト | アプリ情報</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ページ上部へ">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      <span>ROOM ASSIST</span>
+    </a>
+    <nav aria-label="ページ内ナビゲーション">
+      <a href="#features">機能</a>
+      <a href="#data">データ利用</a>
+      <a href="#privacy">プライバシー</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">PERSONAL CHROME EXTENSION</p>
+        <h1 id="hero-title">楽天ROOM<br><span>準備アシスト</span></h1>
+        <p class="lead">楽天市場の商品リサーチから、紹介文の作成、ROOM投稿直前の入力までを支援する個人用Chrome拡張機能です。</p>
+        <div class="status"><span aria-hidden="true"></span> 開発・個人利用中</div>
+      </div>
+      <div class="flow-card" aria-label="処理の流れ">
+        <p class="flow-label">ASSIST FLOW</p>
+        <ol>
+          <li><strong>01</strong><span>市場データを取得</span></li>
+          <li><strong>02</strong><span>条件に合う商品を選定</span></li>
+          <li><strong>03</strong><span>紹介文を生成</span></li>
+          <li><strong>04</strong><span>本人確認後に投稿</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="number">01</p>
+        <div><p class="kicker">PURPOSE &amp; FEATURES</p><h2>利用目的と主な機能</h2></div>
+      </div>
+      <div class="feature-grid">
+        <article><span class="icon" aria-hidden="true">◎</span><h3>商品リサーチ</h3><p>楽天Web Serviceを利用し、ランキング順位、検索順位、レビュー評価・件数、画像、販売中かどうかなどの商品情報を取得します。</p></article>
+        <article><span class="icon" aria-hidden="true">◇</span><h3>候補の整理</h3><p>評価4.0以上かつレビュー100件以上の商品を基本条件とし、投稿候補を最大30件のキューに整理します。</p></article>
+        <article><span class="icon" aria-hidden="true">✦</span><h3>紹介文作成</h3><p>取得した商品情報を基に、価格や送料、未確認の商品体験を含めない短い紹介文の作成を補助します。</p></article>
+        <article><span class="icon" aria-hidden="true">✓</span><h3>本人による最終確認</h3><p>商品画像と紹介文を確認できる状態まで準備します。ROOMの最終投稿操作は自動化せず、利用者本人が行います。</p></article>
+      </div>
+    </section>
+
+    <section id="data" class="section panel-section">
+      <div class="section-heading">
+        <p class="number">02</p>
+        <div><p class="kicker">DATA USAGE</p><h2>APIデータの利用方法</h2></div>
+      </div>
+      <div class="data-layout">
+        <div class="data-copy">
+          <p>取得した情報は、個人用の商品調査、投稿候補の比較、ROOM投稿準備のためにのみ使用します。</p>
+          <ul class="check-list">
+            <li>楽天市場の商品名・説明・画像・URL</li>
+            <li>ランキング順位または検索表示順位</li>
+            <li>レビュー平均・レビュー件数</li>
+            <li>販売状態および商品に付随する公開情報</li>
+          </ul>
+        </div>
+        <aside class="notice">
+          <p class="notice-label">IMPORTANT</p>
+          <p>取得データの再販売や第三者向けデータベースの提供は行いません。楽天のサービスを装うものではなく、楽天グループ各社が提供・運営する公式アプリではありません。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <div class="section-heading">
+        <p class="number">03</p>
+        <div><p class="kicker">PRIVACY &amp; SECURITY</p><h2>プライバシーと保存</h2></div>
+      </div>
+      <div class="privacy-table">
+        <div><h3>保存場所</h3><p>投稿キュー、履歴、API設定は、利用者のChromeプロファイル内にある拡張機能ローカル領域へ保存します。</p></div>
+        <div><h3>外部送信</h3><p>楽天Web Serviceの認証情報は楽天APIへ、文章生成用APIキーと商品情報はGoogle Gemini APIへ、それぞれ必要な処理のために送信します。</p></div>
+        <div><h3>このWebサイト</h3><p>この説明サイトには、入力フォーム、アクセス解析、広告、Cookie、利用者データの収集機能はありません。</p></div>
+        <div><h3>認証情報</h3><p>Application ID、Access Key、Gemini APIキーをこの説明サイトに掲載したり、サイト側へ保存したりすることはありません。</p></div>
+      </div>
+    </section>
+
+    <section class="summary" aria-labelledby="summary-title">
+      <p class="kicker">APPLICATION INFORMATION</p>
+      <h2 id="summary-title">登録情報</h2>
+      <dl>
+        <div><dt>アプリケーション名</dt><dd>楽天ROOM準備アシスト</dd></div>
+        <div><dt>アプリケーション種別</dt><dd>個人利用のChrome拡張機能</dd></div>
+        <div><dt>データ利用目的</dt><dd>楽天市場の商品調査、投稿候補整理、紹介文および投稿準備の補助</dd></div>
+        <div><dt>公開情報ページ</dt><dd>本ページ</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>楽天ROOM準備アシスト</strong><p>Version 1.2.0 · 個人開発</p></div>
+    <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a>
+  </footer>
+</body>
+</html>
